@@ -59,6 +59,10 @@ app.get('/getusers', async (req, res) => {
   });
 });
 
+app.get('/', (req, res) => {
+  res.end('GET');
+})
+
 app.listen(PORT || 5000, () => {
   console.log(`Server running on port ${PORT}`);
 });
